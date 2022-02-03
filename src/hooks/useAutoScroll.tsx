@@ -32,6 +32,7 @@ export function useAutoScroll<T>() {
     autoscrollSpeed = DEFAULT_PROPS.autoscrollSpeed,
   } = useProps();
 
+  // @ts-ignore: hotfix for build
   if (autoscrollSpeed === 0 || autoscrollThreshold === 0) return useNode(0);
 
   const {

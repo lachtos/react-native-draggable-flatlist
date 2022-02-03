@@ -352,6 +352,7 @@ function DraggableFlatListInner<T>(props: DraggableFlatListProps<T>) {
               scrollOffset,
               props.horizontal ? contentOffset.x : contentOffset.y
             ),
+            // @ts-ignore: hotfix for build
             autoScrollNode,
           ]),
       },
