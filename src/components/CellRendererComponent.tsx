@@ -147,8 +147,8 @@ function CellRendererComponent<T>(props: Props<T>) {
       ref={viewRef}
       onLayout={onCellLayout}
       style={[
-        isAndroid && { elevation: isActive ? 1 : 0 },
-        // isAndroid && { zIndex: isActive ? 999 : 0 },
+        // isAndroid && { elevation: isActive ? 1 : 0 },
+        isAndroid && { zIndex: isActive ? 999 : 0 },
         { flexDirection: horizontal ? "row" : "column" },
         (isWeb || isIOS) && { zIndex: isActive ? 999 : 0 },
       ]}
