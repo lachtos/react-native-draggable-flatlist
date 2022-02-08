@@ -52,6 +52,7 @@ export type RenderItem<T> = (params: RenderItemParams<T>) => React.ReactNode;
 
 export type AnimatedFlatListType = <T>(
   props: Animated.AnimateProps<
+    // @ts-ignore: fix build
     FlatListProps<T> & {
       ref: React.Ref<FlatList<T>>;
       simultaneousHandlers?: React.Ref<any> | React.Ref<any>[];

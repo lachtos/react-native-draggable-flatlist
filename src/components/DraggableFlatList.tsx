@@ -50,6 +50,7 @@ import RefProvider, { useRefs } from "../context/refContext";
 import DraggableFlatListProvider from "../context/draggableFlatListContext";
 
 type RNGHFlatListProps<T> = Animated.AnimateProps<
+  // @ts-ignore: fix build
   FlatListProps<T> & {
     ref: React.Ref<FlatList<T>>;
     simultaneousHandlers?: React.Ref<any> | React.Ref<any>[];
