@@ -369,6 +369,7 @@ function DraggableFlatListInner<T>(props: DraggableFlatListProps<T>) {
       keyExtractor={keyExtractor}
       horizontal={!!props.horizontal}
     >
+      {/* @ts-ignore */}
       <PanGestureHandler
         ref={panGestureHandlerRef}
         hitSlop={dragHitSlop}
